@@ -13,7 +13,7 @@ class App extends Component {
       heroKey: 'init',
       myMessage: ''
     };
-    this.socket = SocketIOClient.connect('http://localhost:3001');
+    this.socket = SocketIOClient.connect('http://138.68.245.196:3001');
   }
 
   componentDidMount() {
@@ -38,7 +38,7 @@ class App extends Component {
 
   connect = () => {
     this.setState({ connected: true })
-    this.socket.connect('http://localhost:3001');
+    this.socket.connect('http://138.68.245.196:3001');
   }
 
   clearMessages = () => {

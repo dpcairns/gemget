@@ -104,7 +104,7 @@ class GameBox extends Component {
       <div className="game">
 
       <input value={name} onChange={ (e) => { this.handleInput(e) }} />
-
+	<p>j, k, l, i to move</p>
       <Hero position={heroPos}
         gemCount={gemCount}
         name={name}
